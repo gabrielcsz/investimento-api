@@ -60,6 +60,9 @@ Telemetria
 
 Para Acesar os Endpoints será necessário um Bearer token JWT válido do Keycloak. 
 
+Caso o Banco de dados não suba corretamente, pode rodar o dadosDB.sql para importar os dados
+
 POSTMAN Collection
  - Uma coleção Postman está disponível para facilitar os testes dos endpoints da API. Você pode importar o arquivo `InvestimentosAPI.postman_collection.json` no Postman para começar a usar.
+
 
