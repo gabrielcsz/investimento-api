@@ -1,0 +1,27 @@
+services:
+  keycloak:
+    image: "quay.io/keycloak/keycloak:24.0"
+    container_name: keycloak
+    command: start-dev --import-realm
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./keycloak-export:/opt/keycloak/data/import
+
+  mssql:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Str0ngP@ss2025"
+    volumes:
+      - "mssql-data:/var/opt/mssql"
+
+volumes:
+  keycloak-data:
+  mssql-data:

@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "b0b94d27-1729-4a85-ae71-1c3f735f9819",
+		"name": "InvestimentoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47967557",
+		"_collection_link": "https://gabrielcsz-2853677.postman.co/workspace/gabrielcsz's-Workspace~ff009059-1b69-4a36-8631-274c2957a49f/collection/47967557-b0b94d27-1729-4a85-ae71-1c3f735f9819?action=share&source=collection_link&creator=47967557"
+	},
+	"item": [
+		{
+			"name": "simular-investimento",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NTk5MjEsImlhdCI6MTc2Mzc1OTYyMSwianRpIjoiY2E5OGYyNTEtNmFkNi00YTkyLThjZTEtZmQ0YmNkYzI3MDVhIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.ZUBADVcTtoXhJqQoOWVYfgQbomRtDGFfUVe0fcD6JB1l6PgMjZHtPsQ1OZgUiroJUfCAacq6Lox-LBKjQQYJxyqAWmOUzdHHuqGdAik2pP3uHcwmrTAuAOCMrT4gbaccZ6hgaNU4Eg92MnbIKI8P61fwFk35DAKxIBQ2S6qF83kyqMlobGCezQwkYUer_pfhvQIiCMV3bueI0i2uX9W_2h3prhhYYgvqIb-gqXJP39P-eDffFRUjuVwMv8Jf3MNhvpiF02CgM1i28cyoDhl7lQHGkq88T1P4FqTSgdAqIQKKAp7jP7gQh-PzE5_02qr5fxyHNm5-Ovkq-_rNZHfzbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteId\": 123,\r\n    \"valor\": 10000.00,\r\n    \"prazoMeses\": 12,\r\n    \"tipoProduto\": \"CDB\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/simulacoes/simular-investimento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simulacoes",
+						"simular-investimento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar Simulacoes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDY2NzgsImlhdCI6MTc2Mzc0NjM3OCwianRpIjoiMjJiMjdjODUtYTY1MS00OTkxLTlkM2YtNzA2YzY0ZmU0N2U3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.LgbBcpD92KiMn-Pe_Fye4l6uISGZ9zwRjQBlAP0olZBv7cRo5kT5xbBBHAEk6F3scaowpiWgiqpVKCo9breUuam_Z_i3UHhFc2Nsw89fGr9kr780UwbQwnCOS883JfTCu0jWbwxRmHfIeY-hXEiSgfbHz-7nkqGBuI9aB6fm9LU7QpZE_RcSdi_iL0W6NXdNRItvjPSt1HOFivdfI_8n6YZxWbxeDrKkkR6L5yhVzQ8OhEiUFnRI35MSI3UWNh9npyKUaBlX3qzKRBLFMgeFTNixIgdy30KvXlTOj5CEAZhBeeD8_x_Fif30rZzRTClAqvUeq3VOfZyi-rGrvILLBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/simulacoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simulacoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "simulacoes produto dia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDY2NzgsImlhdCI6MTc2Mzc0NjM3OCwianRpIjoiMjJiMjdjODUtYTY1MS00OTkxLTlkM2YtNzA2YzY0ZmU0N2U3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.LgbBcpD92KiMn-Pe_Fye4l6uISGZ9zwRjQBlAP0olZBv7cRo5kT5xbBBHAEk6F3scaowpiWgiqpVKCo9breUuam_Z_i3UHhFc2Nsw89fGr9kr780UwbQwnCOS883JfTCu0jWbwxRmHfIeY-hXEiSgfbHz-7nkqGBuI9aB6fm9LU7QpZE_RcSdi_iL0W6NXdNRItvjPSt1HOFivdfI_8n6YZxWbxeDrKkkR6L5yhVzQ8OhEiUFnRI35MSI3UWNh9npyKUaBlX3qzKRBLFMgeFTNixIgdy30KvXlTOj5CEAZhBeeD8_x_Fif30rZzRTClAqvUeq3VOfZyi-rGrvILLBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/simulacoes/por-produto-dia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simulacoes",
+						"por-produto-dia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Investimentos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDY2NzgsImlhdCI6MTc2Mzc0NjM3OCwianRpIjoiMjJiMjdjODUtYTY1MS00OTkxLTlkM2YtNzA2YzY0ZmU0N2U3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.LgbBcpD92KiMn-Pe_Fye4l6uISGZ9zwRjQBlAP0olZBv7cRo5kT5xbBBHAEk6F3scaowpiWgiqpVKCo9breUuam_Z_i3UHhFc2Nsw89fGr9kr780UwbQwnCOS883JfTCu0jWbwxRmHfIeY-hXEiSgfbHz-7nkqGBuI9aB6fm9LU7QpZE_RcSdi_iL0W6NXdNRItvjPSt1HOFivdfI_8n6YZxWbxeDrKkkR6L5yhVzQ8OhEiUFnRI35MSI3UWNh9npyKUaBlX3qzKRBLFMgeFTNixIgdy30KvXlTOj5CEAZhBeeD8_x_Fif30rZzRTClAqvUeq3VOfZyi-rGrvILLBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/investimentos/:idCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investimentos",
+						":idCliente"
+					],
+					"variable": [
+						{
+							"key": "idCliente",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Perfil Risco",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDcxMjAsImlhdCI6MTc2Mzc0NjgyMCwianRpIjoiMzc0YzAzZWYtYjVhMi00OGRkLTk3NGMtYTk0ZGIzNjZjYzdiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.C-8gJH3cq4kBmX1eMdRcZSTO85cCSV-bFO_acjBAXEy3lpEv39Dn9Hsi-08uJFbo-tXBPmLSn8Bu5gvgrBxgM7zZHMMtXMHKzYga-w0zQkGr_frenLZkyYT0FUdoeUdsLTPJm3kpldovdJRGYpX2hlowgPv996x0Adr5uzADo88JbFh4nPHC30GXb5Us0Xv4SKo_zM0O36MkTDmwH-PLAN1hTQZ4hCwBKP62FqQfH8daUmt6yh88iEP9YBgUTzjVcSb3LE83Dv9bXARa3PJXSlM8tLjjxCrF8R0TRcBva1GO_2TcvFKy7EXHcKCG87PhDZW9MdpLNvDn8TZBFmo4JA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/perfil-risco/124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perfil-risco",
+						"124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recomendar produtos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDY2NzgsImlhdCI6MTc2Mzc0NjM3OCwianRpIjoiMjJiMjdjODUtYTY1MS00OTkxLTlkM2YtNzA2YzY0ZmU0N2U3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.LgbBcpD92KiMn-Pe_Fye4l6uISGZ9zwRjQBlAP0olZBv7cRo5kT5xbBBHAEk6F3scaowpiWgiqpVKCo9breUuam_Z_i3UHhFc2Nsw89fGr9kr780UwbQwnCOS883JfTCu0jWbwxRmHfIeY-hXEiSgfbHz-7nkqGBuI9aB6fm9LU7QpZE_RcSdi_iL0W6NXdNRItvjPSt1HOFivdfI_8n6YZxWbxeDrKkkR6L5yhVzQ8OhEiUFnRI35MSI3UWNh9npyKUaBlX3qzKRBLFMgeFTNixIgdy30KvXlTOj5CEAZhBeeD8_x_Fif30rZzRTClAqvUeq3VOfZyi-rGrvILLBg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/produtos-recomendados/conservador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produtos-recomendados",
+						"conservador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "telemetria",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5T1hyTzBpa1V3Q1ZvQ29WeWllelZvcVZ6YnJMU21obGVoU3JkNGJJczlvIn0.eyJleHAiOjE3NjM3NDU0MjUsImlhdCI6MTc2Mzc0NTEyNSwianRpIjoiZTdmMmUxYjItZjk5Yi00Y2E4LWIyMzItMmM3ODhlMjA5NmRkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgxL3JlYWxtcy9pbnZlc3RpbWVudG8tcmVhbG0iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNWFkYWFlYWEtOTY3Zi00ZmQ5LWE1YjYtYWQ2MjM0YWQ1Y2EyIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaW52ZXN0aW1lbnRvLWFwaSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtaW52ZXN0aW1lbnRvLXJlYWxtIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImNsaWVudEhvc3QiOiIxNzIuMjIuMC4xIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LWludmVzdGltZW50by1hcGkiLCJjbGllbnRBZGRyZXNzIjoiMTcyLjIyLjAuMSIsImNsaWVudF9pZCI6ImludmVzdGltZW50by1hcGkifQ.dMPjNBvUryXTHHVz7tRNLJaUwN9NlmdOCtj2eEEOqCgvYda_uBUiJV9tNqFolXU1XXA7eaGK2NpX8jrVHmHXHYYb5PrxrYyl65yWafaGdqli52qQmsGULG0U_5639WzvMYTj0hFQ3Mm1o6HYwsN-KepbKLf6_T74ihAkVZ6jWed93cwaL-YsS823IlP9Nq0I-5h0iaK7HZhR7AogOjrwC37Zd6tJodsrOIkhulaZ5tg97pA2uEvXIQYctsl3qHtpFA770ySQIhyjIdp4j8-TbFHOYqUzA6tbixfdaZm1D5zoNPP71axJgwdITNEpl5PaN1h3wAC5ILTHLJFFY7Iqgg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/telemetria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"telemetria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SSO keycloak",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "investimento-api",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "mANuNvtsEcgzqPQ0zKFumoNPwWvrRS9B",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "gabriel",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "9876543210",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/realms/investimento-realm/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"realms",
+						"investimento-realm",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
