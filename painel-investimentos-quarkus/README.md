@@ -58,7 +58,8 @@ Telemetria
 
  - GET /telemetria
 
-Para Acesar os Endpoints será necessário um token JWT válido do Keycloak.
+Para Acesar os Endpoints será necessário um Bearer token JWT válido do Keycloak. 
 
 POSTMAN Collection
  - Uma coleção Postman está disponível para facilitar os testes dos endpoints da API. Você pode importar o arquivo `InvestimentosAPI.postman_collection.json` no Postman para começar a usar.
+
